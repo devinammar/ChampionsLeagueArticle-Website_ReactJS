@@ -1,0 +1,57 @@
+/* Footer container */
+.footer-container {
+  background-color: #0a0a5d; /* Warna latar belakang sesuai gambar */
+  color: #ffffff;
+  padding: 20px 0; /* Jarak padding atas dan bawah */
+  width: 100%; /* Pastikan footer mengisi lebar penuh layar */
+  position: relative;
+  bottom: 0;
+  display: grid;
+  justify-self: center;
+}
+
+/* Footer content untuk menata elemen di dalam footer */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Untuk rata tengah */
+  justify-content: center;
+}
+
+/* Styling teks di dalam footer */
+.footer-content p {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Tautan footer */
+.footer-links {
+  display: flex;
+  justify-content: center; /* Rata tengah secara horizontal */
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsif: Sesuaikan untuk ukuran layar lebih kecil */
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column; /* Menyusun tautan secara vertikal di layar kecil */
+    align-items: center; /* Rata tengah */
+    gap: 10px;
+  }
+
+  .footer-content p {
+    font-size: 12px; /* Sesuaikan ukuran font untuk layar kecil */
+  }
+}

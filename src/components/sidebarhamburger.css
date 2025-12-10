@@ -1,0 +1,13 @@
+#buttonforsidebar {
+  margin:16px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #202020;
+  z-index: 100;
+}
+
+#buttonforsidebar:hover {
+  color: #0A0A5D;
+}

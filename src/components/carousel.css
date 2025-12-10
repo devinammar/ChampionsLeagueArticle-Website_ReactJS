@@ -1,0 +1,67 @@
+.carouselparent {
+  display: inline-flex;
+  width: 82vw;
+  height: auto;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+  margin-bottom: 32px;
+}
+
+.carousel {
+  display: flex;
+  animation: slide 50s linear infinite;
+  animation-play-state: running;
+}
+
+.carouselparent:hover .carousel {
+  animation-play-state: paused;
+}
+
+.carouselcard {
+  background-image: linear-gradient(to left, #0A0A5D, #122FED);
+  color: aliceblue;
+  width: 200px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-top: 20px;
+  position: relative;
+  line-height: 1.5;
+  border-radius: 16px;
+}
+
+.captioncarousel {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 14px;
+  width: 200px;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.gambarcarousel {
+  max-width: 200px;
+  max-height: 160px;
+  border-radius: 16px 16px 0 0;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0); /* Mulai dari posisi awal */
+  }
+  33.3% {
+    transform: translateX(-33.3%); /* Geser elemen pertama dan kedua */
+  }
+  66.6% {
+    transform: translateX(-66.6%); /* Geser lebih lanjut */
+  }
+  100% {
+    transform: translateX(-100%); /* Geser seluruhnya ke kiri */
+  }
+}

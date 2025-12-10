@@ -1,0 +1,182 @@
+* {
+  font-family: 'roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+html, body {
+  height: 100%;
+  line-height: 1;
+  background-color: #F1F3F7;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* @media screen and (max-width:640px) {
+  .p {
+      font-size:32px;
+  }
+}
+
+@media screen and (min-width:641px) and (max-width:1024px) {
+  .p {
+      font-size: 50px;
+  }
+} */
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5);
+    grid-template-rows: repeat(5);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.headerdashboard{
+grid-area: 1 / 2 / 2 / 6;
+}
+
+.navdashboard {
+grid-area: 1 / 1 / 6 / 2;
+}
+
+.sectiondashboard1 { 
+grid-area: 2 / 2 / 3 / 6;
+margin-left: 200px;
+margin-right: 20px;
+}
+
+.sectiondashboard2 { 
+grid-area: 3 / 2 / 4 / 6;
+margin-left: 20px;
+margin-right: 20px;
+padding-left: 186px;
+padding-right: 20px;
+}
+
+.subtittle {
+    color: #202020;
+    margin: 20px;
+    padding: 0;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.footerdashboard {
+grid-area: 5 / 2 / 6 / 6; 
+margin-left: 170px;
+}
+
+/* 
+@media screen and (max-width: 768px) {
+  .grid{
+    display: grid;
+    grid-template-areas: 
+    "button banner"
+    "section1 section1"
+    "section2 section2"
+    "footer footer";
+    grid-template-columns: 48px 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+  .headerdashboard{
+   grid-area: banner;
+  }
+  .sectiondashboard1{
+    margin-left: 120px;
+  }
+  .sectiondashboard2{
+    margin-left: 120px;
+  }
+} */
+
+
+@media screen and (max-width: 768px) {
+  .grid {
+        height: 100vh;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas: 
+        "header"
+        "section1"
+        "section2"
+        "footer";
+    }
+
+.headerdashboard{
+  grid-area: header;
+}
+
+.navdashboard{
+  display: none;
+  grid-area: sidebar;
+}
+  .sectiondashboard1{
+    margin-left: 16px;
+    padding: 0;
+    grid-area: section1;
+  }
+  .sectiondashboard2{
+    margin-left: 16px;
+    padding: 0;
+    grid-area: section2;
+  }
+  .footerdashboard{
+    margin-left: 0;
+    width: 100%;
+    grid-area: footer;
+  }
+}
+
+/* uutk semua page */
+@media screen and (min-width:1920px){
+  .container{
+    width:1920px;
+    justify-self: center;
+  }
+}
+
+/* uutk page schedule & resultmatch */
+@media screen and (min-width:2300px){
+#sectiondashboardfirst{
+    justify-self: center;
+  }
+}
+
+/* buat ngerapihin posisi */
+@media screen and (min-width: 2780px) {
+    .grid {
+        height: 100vh;
+        grid-template-columns: 20px auto;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas: 
+        "sidebar header"
+        "sidebar section1"
+        "sidebar section2"
+        "sidebar footer";
+    }
+    
+    .navdashboard {
+        grid-area: sidebar;
+    }
+    
+    .headerdashboard {
+        grid-area: header;
+    }
+    .footerdashboard {
+        grid-area: footer
+    };
+    .sectiondashboard1 {
+        grid-area: section1;
+    }
+    .sectiondashboard2 {
+        grid-area: section2;
+    }
+}

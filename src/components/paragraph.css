@@ -1,0 +1,13 @@
+.p {
+    color: #202020;
+    margin: 20px;
+    padding: 0px;
+    /* font-size: 16em; */
+    line-height: 1.5;
+}
+
+/* @media screen and (max-width: 768px) {
+    .p{
+padding: 0;
+    }
+} */

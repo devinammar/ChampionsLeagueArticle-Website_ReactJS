@@ -1,0 +1,63 @@
+/* Kontainer untuk tabel responsif */
+.table-container {
+  width: 100%;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  padding-right: 20px; /* Jarak tambahan di kanan */
+}
+
+.styled-table {
+  width: 100%; /* Pastikan tabel mengisi lebar kontainer */
+  border-collapse: separate; 
+  border-spacing: 0;
+  border-radius: 12px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.styled-table thead tr {
+  background-color: #0A0A5D;
+  color: #ffffff;
+  text-align: left;
+}
+
+.clublogo {
+  width: 20px;
+  height: 23px;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 16px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #0A0A5D;
+}
+
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #0A0A5D;
+}
+
+@media (max-width: 768px) {
+  .styled-table {
+    font-size: 12px;
+  }
+
+  .styled-table th,
+  .styled-table td {
+    padding: 8px 12px;
+  }
+}

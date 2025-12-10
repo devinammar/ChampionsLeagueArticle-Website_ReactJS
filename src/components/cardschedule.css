@@ -1,0 +1,85 @@
+.scheduleparent {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    /* grid-template-rows: repeat(auto-fill, minmax(200px, auto)); */
+    gap: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 44px;
+}
+
+.schedulecard {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr auto 1fr; 
+    grid-template-rows: 1fr; 
+    grid-template-areas: 
+    "logo1 nameclub1 versus logo2 nameclub2"
+    ". . clock . ."; 
+    background-image: linear-gradient(to left, #0A0A5D, #122FED);
+    border-radius: 16px;
+}
+
+.schedulecard:hover {
+  border: 2px solid #6DEAFC;
+}
+
+.logo1 {
+    grid-area: logo1;
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 12px;
+}
+
+.nameclub1 {
+    grid-area: nameclub1;
+    align-self: center;
+    color: white;
+    white-space: nowrap;
+    margin-top: 12px;
+}
+
+.versus {
+    grid-area: versus;
+    place-self: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.logo2 {
+    grid-area: logo2;
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    place-self: center;
+    margin-top: 12px;
+    margin-right: 16px;
+}
+
+.nameclub2 {
+    grid-area: nameclub2;
+    align-self: center;
+    color: white;
+    white-space: nowrap;
+    margin-top: 12px;
+    margin-right: 18px;
+}
+
+.clock {
+    grid-area: clock;
+    place-self: center; 
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+@media (min-width: 1920px) {
+  .carouselparent {
+    width: 1646px;
+  }
+}

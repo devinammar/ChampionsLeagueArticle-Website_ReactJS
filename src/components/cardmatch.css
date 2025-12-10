@@ -1,0 +1,64 @@
+#matchparent{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* grid-template-rows: repeat(auto-fill, minmax(200px, auto)); */
+    gap: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 44px;
+}
+
+#matchcard {
+    display: grid;
+    grid-template-columns: 1fr auto; 
+    grid-template-rows: auto auto auto; 
+    grid-template-areas: 
+    "image image"
+    "nameclub1 score1"
+    "nameclub2 score2"; 
+    background-image: linear-gradient(to left, #0A0A5D, #122FED);
+    border-radius: 16px;
+    color: #ffffff;
+}
+
+#matchcard:hover {
+  border: 2px solid #6DEAFC;
+}
+
+#matchimage{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  place-self:center;
+  padding-bottom: 12px;
+  border-radius: 16px 16px 0 0;
+  grid-column: span 2;
+}
+
+#clubmatch1{
+    grid-area: nameclub1;
+    padding-left: 16px;
+}
+
+#clubmatch2{
+    grid-area: nameclub2;
+    padding: 8px 0px 20px 16px;
+}
+
+#score1{
+grid-area: score1;
+padding-bottom: 12px;
+padding-right: 16px;
+padding-left: 16px;
+}
+
+#score2{
+    grid-area: score2;
+    padding: 8px 16px 20px 16px;
+}
+
+@media screen and (max-width: 400px) {
+    .cardparent {
+        margin-right: 20px;
+    }
+}

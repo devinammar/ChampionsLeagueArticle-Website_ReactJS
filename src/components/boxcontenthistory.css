@@ -1,0 +1,117 @@
+#boxcontentparenthistory{
+    background-image: linear-gradient(to right, #0A0A5D, #122FED);
+    color: #ffffff;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    border-radius: 16px;
+    justify-self: center;
+    margin-bottom: 40px;
+}
+
+#boxcontenthistory{
+    display: grid;
+    grid-template-areas:
+    "tittle image"
+    "caption image"
+    "button image";
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto 1fr; 
+    width: 80vw;
+    justify-self: center;
+}
+
+#imagecontenthistory {
+  grid-area: image;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  justify-self: end;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+
+#tittlecontenthistory {
+grid-area: tittle;
+color: #ffffff;
+font-size: 20px;
+text-align: left;
+margin: 16px;
+line-height: 1.5;
+}
+
+#captioncontenthistory {
+grid-area: caption;
+color: #ffffff;
+font-size: 16px;
+line-height: 1.5;
+margin-left: 16px;
+margin-right: 16px;
+margin-bottom: 16px;
+text-align: left;
+width: clamp(200px, 70%, 100%);
+}
+
+#buttonparenthistory{
+  display: grid;
+  align-self: end;
+}
+
+#buttonhistory {
+  background-color: #6DEAFC;
+  width: auto;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 2px 16px;
+  color: #0A0A5D;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  width: 200px;
+  margin-left: 16px;
+  margin-bottom: 20px;
+}
+
+#buttonhistory:hover{
+  background: #05cbea;
+}
+
+@media screen and (max-width: 600px) {
+  #boxcontenthistory {
+    display: grid;
+    grid-template-areas:
+      "image"
+      "tittle"
+      "caption"
+      "button";
+    grid-template-columns: auto;
+    grid-template-rows: auto; 
+    width: 80vw;
+    justify-self: center;
+  }
+
+  #buttonhistory{
+    display: flex;
+    place-self: center;
+    padding: 4px 16px 4px 16px;
+    height: 36px;
+    margin-bottom: 16px;
+    margin-right: 16px;
+    margin-left: 16px;
+    width: 92%;
+  }
+
+  #imagecontenthistory{
+    justify-self: center;
+  }
+}
+
+@media (min-width: 1920px) {
+  #boxcontenthistory {
+    width: 1600px;
+  }
+}

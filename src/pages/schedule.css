@@ -1,0 +1,51 @@
+#gridschedule {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr 1fr 1fr; 
+    grid-template-rows: auto 1fr auto; 
+    gap: 0; 
+    min-height: 100vh; 
+}
+
+#headerdashboardschedule {
+    grid-area: 1 / 2 / 2 / 6; /* Baris 1, Kolom 2-5 */
+}
+
+#navdashboardschedule {
+    grid-area: 1 / 1 / 4 / 2; /* Mencakup dari Baris 1 sampai akhir Baris 4 (footer) */
+}
+
+#sectiondashboardfirst { 
+    grid-area: 2 / 2 / 3 / 6; /* Baris 2, Kolom 2-5 */
+    margin-left: 186px;
+    margin-right: 20px;
+}
+
+#footerdashboardschedule {
+    grid-area: 3 / 2 / 4 / 6; /* Baris 3, Kolom 2-5 */
+    padding-left: 186px;
+}
+
+#subtittleschedule {
+    color: #202020;
+    margin: 20px;
+    padding: 0;
+    font-size: 22px;
+    line-height: 1.5;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+#navdashboardschedule{
+  display: none;
+}
+  #sectiondashboardfirst{
+    margin-left: 16px;
+    padding: 0;
+  }
+
+  #footerdashboardschedule{
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+  }
+}

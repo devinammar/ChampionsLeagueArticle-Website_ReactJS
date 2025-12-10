@@ -1,0 +1,26 @@
+#header {
+  background-image: url('/banner9.jpg');
+  background-size: cover;
+  background-position: 60%;
+  margin-top: 0;
+  height: 200px;
+  width: 100%;
+  object-position: bottom;
+  z-index: 1;
+}
+
+#h1 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: auto;
+  padding: auto;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#buttonforsidebar{
+  margin-top:20px;
+  margin-left: 20px;
+}
