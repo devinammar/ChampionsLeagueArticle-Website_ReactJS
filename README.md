@@ -1,4 +1,3 @@
-
 # Champions League Article - Website (React JS)
 
 
@@ -6,6 +5,8 @@
 
 
 A sports article website featuring content about the UEFA Champions League, the most prestigious club competition in Europe. This website provides information about the competition, match schedules, highlights, the all-time top scorers list, and also includes navigation to an online store where users can shop for football-related products and merchandise.
+
+
 ## What I used to build this project?
 
 - HTML
