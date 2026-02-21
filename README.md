@@ -13,6 +13,7 @@ A sports article website featuring content about the UEFA Champions League, the 
 - CSS
 - JavaScript
 - React JS (framework) + Vite
+- Vercel (for deployment)
 
 This website doesn't have a backend, it was built for study purposes.
 
