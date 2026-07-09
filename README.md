@@ -20,15 +20,9 @@ This website doesn't have a backend, it was built for study purposes.
 
 ## How to run the website?
 
-To run/open the website, you can open with this link 
-
-```bash
-  https://champions-league-article-website-re.vercel.app/
-```
-
 Click this to open the website :
 
-[![RapScannr](https://img.shields.io/badge/UCL%20Article%20Website%20-Visit-blue)](https://champions-league-article-website-re.vercel.app/)
+[![UCL Article Website](https://img.shields.io/badge/UCL%20Article%20Website%20-Visit-blue)](https://champions-league-article-website-re.vercel.app/)
 
 Or you can copy this link and paste it into your browser:
 
